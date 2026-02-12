@@ -3,7 +3,7 @@ import { ModeToggle } from "@/components/mode-toggle";
 
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b bg-background/70 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="mx-auto flex h-14 max-w-5xl items-center justify-between px-6 md:px-10">
         <a href="#inicio" className="font-semibold tracking-tight">
           Daniel
