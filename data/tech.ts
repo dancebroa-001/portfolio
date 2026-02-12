@@ -1,17 +1,28 @@
+import type { IconType } from "react-icons";
+import {
+  SiNextdotjs,
+  SiReact,
+  SiTypescript,
+  SiTailwindcss,
+  SiGit,
+  SiGithub,
+  SiVercel,
+} from "react-icons/si";
+
 export type Tech = {
   name: string;
-  group: "Frontend" | "Backend" | "Tools";
-  icon: string; // ruta dentro de /public
+  Icon: IconType;
+  group?: "Frontend" | "Tools";
 };
 
 export const techStack: Tech[] = [
-  { name: "Next.js", group: "Frontend", icon: "/icons/nextdotjs.svg" },
-  { name: "React", group: "Frontend", icon: "/icons/react.svg" },
-  { name: "TypeScript", group: "Frontend", icon: "/icons/typescript.svg" },
-  { name: "Tailwind CSS", group: "Frontend", icon: "/icons/tailwindcss.svg" },
-
-  { name: "Git", group: "Tools", icon: "/icons/git.svg" },
-  { name: "GitHub", group: "Tools", icon: "/icons/github.svg" },
-  { name: "Vercel", group: "Tools", icon: "/icons/vercel.svg" },
+  { name: "Next.js", Icon: SiNextdotjs, group: "Frontend" },
+  { name: "React", Icon: SiReact, group: "Frontend" },
+  { name: "TypeScript", Icon: SiTypescript, group: "Frontend" },
+  { name: "Tailwind CSS", Icon: SiTailwindcss, group: "Frontend" },
+  { name: "Git", Icon: SiGit, group: "Tools" },
+  { name: "GitHub", Icon: SiGithub, group: "Tools" },
+  { name: "Vercel", Icon: SiVercel, group: "Tools" },
 ];
+
 

@@ -54,23 +54,18 @@ export default function Home() {
           </p>
 
           <div className="mt-6 flex flex-wrap gap-2">
-            {techStack.map((t) => (
-              <Badge
-                key={t.name}
-                variant="secondary"
-                className="inline-flex items-center gap-2 py-1"
-              >
-                <Image
-                  src={t.icon}
-                  alt={t.name}
-                  width={14}
-                  height={14}
-                  className="shrink-0 opacity-80 dark:invert"
-                />
-                {t.name}
-              </Badge>
-            ))}
-          </div>
+  {techStack.map((t) => (
+    <Badge
+      key={t.name}
+      variant="outline"
+      className="inline-flex items-center gap-2 px-3 py-1.5 text-sm bg-muted/40 hover:bg-muted/70 dark:bg-muted/20 dark:hover:bg-muted/30"
+    >
+      <t.Icon className="h-4 w-4 text-foreground" />
+      {t.name}
+    </Badge>
+  ))}
+</div>
+
         </section>
 
         <section id="proyectos" className="mx-auto mt-14 max-w-5xl">
