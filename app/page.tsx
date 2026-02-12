@@ -2,6 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { projects } from "@/data/projects";
 
+import { Badge } from "@/components/ui/badge";
+import { techStack } from "@/data/tech";
+
 export default function Home() {
   return (
     <main className="min-h-screen px-6 py-12 md:px-10">
@@ -28,6 +31,21 @@ export default function Home() {
           <Button variant="outline" asChild>
             <a href="#proyectos">Ver proyectos</a>
           </Button>
+        </div>
+      </section>
+
+      <section className="mx-auto mt-14 max-w-5xl">
+        <h2 className="text-2xl font-semibold tracking-tight">Tecnologías</h2>
+        <p className="mt-2 text-sm text-muted-foreground">
+          Herramientas con las que construyo mis proyectos.
+        </p>
+
+        <div className="mt-6 flex flex-wrap gap-2">
+          {techStack.map((t) => (
+            <Badge key={t.name} variant="secondary">
+              {t.name}
+            </Badge>
+          ))}
         </div>
       </section>
 
