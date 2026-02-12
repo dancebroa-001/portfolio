@@ -1,17 +1,17 @@
 export type Tech = {
   name: string;
   group: "Frontend" | "Backend" | "Tools";
+  icon: string; // ruta dentro de /public
 };
 
 export const techStack: Tech[] = [
-  { name: "Next.js", group: "Frontend" },
-  { name: "React", group: "Frontend" },
-  { name: "TypeScript", group: "Frontend" },
-  { name: "Tailwind CSS", group: "Frontend" },
-  { name: "shadcn/ui", group: "Frontend" },
-  { name: "Framer Motion", group: "Frontend" },
+  { name: "Next.js", group: "Frontend", icon: "/icons/nextdotjs.svg" },
+  { name: "React", group: "Frontend", icon: "/icons/react.svg" },
+  { name: "TypeScript", group: "Frontend", icon: "/icons/typescript.svg" },
+  { name: "Tailwind CSS", group: "Frontend", icon: "/icons/tailwindcss.svg" },
 
-  { name: "Git", group: "Tools" },
-  { name: "GitHub", group: "Tools" },
-  { name: "Vercel", group: "Tools" },
+  { name: "Git", group: "Tools", icon: "/icons/git.svg" },
+  { name: "GitHub", group: "Tools", icon: "/icons/github.svg" },
+  { name: "Vercel", group: "Tools", icon: "/icons/vercel.svg" },
 ];
+

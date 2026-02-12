@@ -4,6 +4,8 @@ import { projects } from "@/data/projects";
 
 import { Badge } from "@/components/ui/badge";
 import { techStack } from "@/data/tech";
+import Image from "next/image";
+
 
 export default function Home() {
   return (
@@ -42,11 +44,24 @@ export default function Home() {
 
         <div className="mt-6 flex flex-wrap gap-2">
           {techStack.map((t) => (
-            <Badge key={t.name} variant="secondary">
+            <Badge
+              key={t.name}
+              variant="secondary"
+              className="inline-flex items-center gap-2 py-1"
+            >
+              <Image
+                src={t.icon}
+                alt={t.name}
+                width={14}
+                height={14}
+                className="shrink-0 opacity-80 dark:invert"
+              />
               {t.name}
             </Badge>
+
           ))}
         </div>
+
       </section>
 
       <section id="proyectos" className="mx-auto mt-14 max-w-5xl">
