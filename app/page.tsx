@@ -62,14 +62,27 @@ export default function Home() {
 
           <div className="mt-6 flex flex-wrap gap-2">
             {techStack.map((t) => (
-              <Badge
+              <a
                 key={t.name}
-                variant="outline"
-                className="inline-flex items-center gap-2 px-3 py-1.5 text-sm bg-muted/40 hover:bg-muted/70 dark:bg-muted/20 dark:hover:bg-muted/30"
+                href={t.url}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`Abrir web oficial de ${t.name}`}
+                className="group inline-block rounded-md transition-transform active:scale-[0.98]
+                 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
               >
-                <t.Icon className="h-4 w-4 text-foreground" />
-                {t.name}
-              </Badge>
+                <Badge
+                  variant="outline"
+                  className="inline-flex items-center gap-2 px-3 py-1.5 text-sm
+                   bg-muted/40 hover:bg-muted/70 dark:bg-muted/20 dark:hover:bg-muted/30
+                   cursor-pointer transition-colors
+                   group-hover:ring-2 group-hover:ring-ring/20 group-hover:ring-offset-2 group-hover:ring-offset-background
+                   group-active:ring-2 group-active:ring-ring/30"
+                >
+                  <t.Icon className="h-4 w-4 text-foreground" />
+                  {t.name}
+                </Badge>
+              </a>
             ))}
           </div>
 
@@ -166,7 +179,7 @@ export default function Home() {
               </a>
             </Button>
           </div>
-          
+
         </section>
       </main>
     </>
