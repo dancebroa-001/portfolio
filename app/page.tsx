@@ -31,8 +31,7 @@ export default function Home() {
           </h1>
 
           <p className="mt-4 max-w-xl text-muted-foreground">
-            Portfolio en construcción. Aquí irán mis proyectos, tecnologías y
-            enlaces.
+            Ingeniero Informático de Computadores.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
