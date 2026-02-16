@@ -24,14 +24,26 @@ export function ModeToggle() {
         </Button>
       </DropdownMenuTrigger>
 
-      <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => setTheme("light")}>
+      <DropdownMenuContent
+        align="end"
+        sideOffset={12}
+        className="z-50 min-w-36 rounded-xl border border-border/80 bg-popover text-popover-foreground shadow-xl shadow-black/10 dark:shadow-black/40"
+      >
+        <DropdownMenuItem
+          className="cursor-pointer rounded-lg focus:bg-muted focus:text-foreground"
+          onClick={() => setTheme("light")}
+        >
           Claro
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("dark")}>
+
+        <DropdownMenuItem
+          className="cursor-pointer rounded-lg focus:bg-muted focus:text-foreground"
+          onClick={() => setTheme("dark")}
+        >
           Oscuro
         </DropdownMenuItem>
-      </DropdownMenuContent>
+      </DropdownMenuContent >
+      
     </DropdownMenu>
   );
 }
