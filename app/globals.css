@@ -2,7 +2,7 @@
 
 :root {
   /* Modern light: off-white + softer neutrals */
-  --background: 0 0% 98%;
+  --background: 0 0% 85%;
   --foreground: 0 0% 8%;
 
   --card: 0 0% 99%;
@@ -26,8 +26,8 @@
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 98%;
 
-  --border: 0 0% 86%;
-  --input: 0 0% 86%;
+  --border: 0 0% 65%;
+  --input: 0 0% 65%;
   --ring: 0 0% 15%;
 
   --radius: 0.9rem;
@@ -59,8 +59,8 @@
   --destructive: 0 63% 31%;
   --destructive-foreground: 0 0% 98%;
 
-  --border: 0 0% 20%;
-  --input: 0 0% 20%;
+  --border: 0 0% 40%;
+  --input: 0 0% 40%;
   --ring: 0 0% 75%;
 }
 

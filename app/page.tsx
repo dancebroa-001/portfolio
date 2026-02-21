@@ -35,7 +35,7 @@ export default function Home() {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <Button asChild>
+            <Button variant="outline" asChild>
               <a
                 href="https://github.com/dancebroa-001"
                 target="_blank"
