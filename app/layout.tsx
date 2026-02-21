@@ -3,7 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
-  title: "Daniel · Portfolio",
+  title: "Daniel Ceballos Roales",
   description: "Portfolio personal con proyectos y tecnologías.",
 };
 

@@ -6,7 +6,7 @@ export function Navbar() {
         <header className="sticky top-0 z-50 border-b bg-background/85 backdrop-blur supports-[backdrop-filter]:bg-background/75">
             <div className="mx-auto flex h-14 max-w-5xl items-center justify-between px-6 md:px-10">
                 <a href="#inicio" className="font-semibold tracking-tight">
-                    Daniel
+                 
                 </a>
 
                 <nav className="flex items-center gap-2">

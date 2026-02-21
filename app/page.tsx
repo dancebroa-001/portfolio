@@ -27,7 +27,7 @@ export default function Home() {
       <main className="min-h-screen px-6 py-12 md:px-10">
         <section id="inicio" className="mx-auto max-w-5xl">
           <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
-            Daniel · Portfolio
+            Daniel Ceballos Roales
           </h1>
 
           <p className="mt-4 max-w-xl text-muted-foreground">

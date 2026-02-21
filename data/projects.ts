@@ -9,7 +9,7 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Proyecto 1",
+    title: "FocusFlow",
     description: "Breve descripción de lo que hace y qué aprendiste.",
     tech: ["Next.js", "TypeScript", "Tailwind"],
     githubUrl: "https://github.com/dancebroa-001",
